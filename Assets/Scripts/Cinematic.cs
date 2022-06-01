@@ -13,7 +13,6 @@ public class Cinematic : MonoBehaviour
     [SerializeField] DroneBrain[] Drones;
     [Header("---------------------------")]
     [SerializeField] GameObject LayerWithCard;
-    [SerializeField] GameObject LayerWithLines;
     [Header("---------------------------")]
     [SerializeField] Card Card;
     [Header("---------------------------")]
@@ -67,7 +66,6 @@ public class Cinematic : MonoBehaviour
                 {
                     Destroy(item);
                 }
-                LayerWithLines.SetActive(false);
                 LayerWithCard.SetActive(true);
                 Card.MySignal += Directing;
                 Card.RotateAndScale();
